@@ -1,0 +1,28 @@
+{
+  "name": "reviews-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12",
+    "pg": "^8.7.1",
+    "postgres": "^1.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Team-Scoria/Reviews-API.git"
+  },
+  "author": "Shanna Murry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Team-Scoria/Reviews-API/issues"
+  },
+  "homepage": "https://github.com/Team-Scoria/Reviews-API#readme"
+}
