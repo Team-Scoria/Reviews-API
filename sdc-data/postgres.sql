@@ -60,6 +60,7 @@
 -- CREATE INDEX date ON reviews USING hash (date);
 -- CREATE INDEX photo ON photos USING hash (review_id);
 -- CREATE INDEX characteristics_product ON characteristics USING hash (product_id);
+-- create index reviews_id on reviews using hash (id);
 
 -- SELECT setval('reviews_id_seq', (SELECT MAX(id) FROM reviews)+1);
 -- SELECT setval('photos_id_seq', (SELECT MAX(id) FROM photos)+1);

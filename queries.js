@@ -102,7 +102,8 @@ module.exports = {
 
   createReview: function (req, res) {
     let reviewsPostQuery = 'INSERT INTO reviews (product_id, rating, date, summary, body, recommend, reviewer_name, reviewer_email) VALUES ($1, $2, $3, $4, $5, $6, $7, $8)';
-    let postParams = [req.body.product_id, req.body.rating, 'NOW()', req.body.summary, req.body.body, req.body.recommend, req.body.reviewer_name, req.body.reviewer_email]
+    let postParams = [req.body.product_id, req.body.rating, 'NOW()', req.body.summary, req.body.body, req.body.recommend, req.body.reviewer_name, req.body.reviewer_email];
+    console.log(postParams)
 
     db.query(reviewsPostQuery, postParams)
       .then(result => {
